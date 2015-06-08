@@ -1,0 +1,74 @@
+/*
+	Theme Name: thinkingstudents
+	Author: Jairoh Tuada
+	Author URI: http://twitter.com/jairoh
+	Version: 1
+*/
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+.body-container {
+	width: 980px;
+	margin: 20px auto;
+}
+
+
+/*==================================HEADER SECTION==============================================*/
+#site-name a {
+	text-decoration: none;
+	color: #555;
+}
+#site-name {
+	margin-bottom: 0;
+}
+#site-descrip {
+	margin-top: 0;
+	margin-left: 125px;
+	font-style: italic;
+}
+red {
+	color: #f00;
+}
+nav#toolbar {
+	background: #222;
+	background: -moz-linear-gradient(#525252, #383838);
+	background: -o-linear-gradient(#525252, #383838);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#525252), to(#383838));
+	background: -webkit-linear-gradient(#3498DB, #006EC3);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	clear: both;
+	display: block;
+	margin: 0px 0px 20px 0px;
+	width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: 'Open Sans',Arial,sans-serif width: 1266px;
+	height: 38px;
+	font-size: 14px;
+}
+
+nav#toolbar ul:before, nav#toolbar ul:after { content: ""; display: table; }
+nav#toolbar ul:after { clear:both; }
+nav#toolbar ul {
+	*zoom: 1;
+	padding: 0;
+	margin: 0;
+}
+nav#toolbar ul li {
+	float: left;
+	list-style: none;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+nav#toolbar ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #f0f0f0;
+}
