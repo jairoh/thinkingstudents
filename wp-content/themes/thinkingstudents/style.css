@@ -72,3 +72,23 @@ nav#toolbar ul li a {
 	font-weight: bold;
 	color: #f0f0f0;
 }
+
+
+/*==================================CONTENT SECTION==============================================*/
+article.post {
+	//border: 1px solid #000;
+	width: 630px;
+}
+article.post a {
+	color: #006ec3;
+}
+article.post h2 {
+	margin-bottom: -10px;
+}
+article.post p.post-info, 
+article.post p.post-info a {
+	color: #999;
+}
+article.post p {
+	font-size: 95%;
+}
