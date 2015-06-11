@@ -33,6 +33,16 @@ body {
 red {
 	color: #f00;
 }
+#banner table {
+	//width: 100%;
+}
+#banner table tr td{
+	//border: 1px solid #000;
+}
+#banner #banner-logo {
+	float: right;
+	width: 200px;
+}
 nav#toolbar {
 	background: #222;
 	background: -moz-linear-gradient(#525252, #383838);
@@ -76,19 +86,36 @@ nav#toolbar ul li a {
 
 /*==================================CONTENT SECTION==============================================*/
 article.post {
-	//border: 1px solid #000;
+	border-bottom: 1px dotted #999;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 	width: 630px;
 }
-article.post a {
-	color: #006ec3;
+article.post p {
+	color: #444;
 }
+article.post:last-of-type {
+	border-bottom: none;
+}
+
 article.post h2 {
 	margin-bottom: -10px;
+	font-size: 16px;
 }
+article.post h2 a {
+	text-decoration: none;
+	color: #006ec3;
+}
+article.post h2 a:visited {
+	color: #4B9CAE;
+}
+
+
 article.post p.post-info, 
 article.post p.post-info a {
 	color: #999;
+	font-size: 12px;
 }
-article.post p {
-	font-size: 95%;
+article.post p.post-content {
+	margin-top: -5px;
 }

@@ -2,6 +2,9 @@
 
 get_header();
 	
+	
+	echo "<h4>Category: Campus Faith</h4>";
+
 	$campus_faith_posts = new WP_Query( 'cat=5&post_per_page=10' );
 	//loop through the posts and output them in the page
 	if ( $campus_faith_posts->have_posts() ):

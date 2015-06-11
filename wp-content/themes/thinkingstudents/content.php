@@ -21,13 +21,19 @@
 		?>
 	</p>
 
-	<p>
-		<?php if ( $post->post_excerpt ): ?>
+	<?php if ( is_single() ): ?>
+		<p class="post-content" >
+			<?php if ( $post->post_excerpt ): ?>
+				<?php echo get_the_excerpt(); ?>
+				<a href="#">Read more &raquo;</a>
+			<?php else: ?>
+				<?php the_content( 'Read more &raquo;' );  ?>
+			<?php endif; ?>
+		</p>
+	<?php else: ?>
+		<p>
 			<?php echo get_the_excerpt(); ?>
-			<a href="#">Read more &raquo;</a>
-		<?php else: ?>
-			<?php the_content( 'Read more &raquo;' );  ?>
-		<?php endif; ?>
-	</p>
+		</p>
+	<?php endif; ?>
 
 </article>

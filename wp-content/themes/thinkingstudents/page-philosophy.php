@@ -1,6 +1,9 @@
 <?php 
 
 get_header();
+
+	echo "<h4>Category: Philosophy</h4>";
+
 	
 	$philosophy_posts = new WP_Query( 'cat=6&post_per_page=10' );
 	//loop through the posts and output them in the page

@@ -2,6 +2,8 @@
 
 get_header();
 	
+	echo "<h4>Category: History</h4>";
+
 	$history_posts = new WP_Query( 'cat=4&post_per_page=10' );
 	//loop through the posts and output them in the page
 	if ( $history_posts->have_posts() ):
