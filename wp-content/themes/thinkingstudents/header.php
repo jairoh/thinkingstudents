@@ -45,4 +45,17 @@
 		</div>
 		<!-- end body header -->
 
-		
+		<!-- search form -->
+		<div id="search">
+			<?php get_search_form(); ?>
+		</div>
+		<!-- end search form -->
+
+
+		<!-- sidebar widget -->
+		<?php if ( is_active_sidebar( 'sidebar' ) ): ?>
+			<div class="sidebar">
+				<?php dynamic_sidebar( 'sidebar' ) ?>
+			</div>
+		<?php endif; ?>
+		<!-- end sidebar widget -->

@@ -24,3 +24,27 @@ function thinkingStudents_setup () {
 
 }
 add_action( 'after_setup_theme', 'thinkingStudents_setup' );
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+/**
+ * Register three Twenty Fourteen widget areas.
+ *
+ * @since Twenty Fourteen 1.0
+ */
+function learningWordPress_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Sidebar Widget',
+		'id'            => 'sidebar'
+	) );
+
+	register_sidebar( array(
+		'name' 			=> 'Footer Area',
+		'id'			=> 'footer'
+	) );
+	
+}
+add_action( 'widgets_init', 'learningWordPress_widgets_init' );
