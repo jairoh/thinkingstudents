@@ -1,4 +1,11 @@
 <article class="post">
+	
+	<?php if ( !is_single() ): ?>
+		<div class="thumbnail" >
+			<?php the_post_thumbnail( 'small-thumbnail' ); //featured image ?>
+		</div>
+	<?php endif; ?>
+
 	<h2><a href="<?php echo the_permalink(); ?>"><?php echo the_title() ?></a></h2>
 	<p class="post-info">
 		<?php the_time( 'F jS, Y g:i a' ); ?> |
@@ -21,7 +28,10 @@
 		?>
 	</p>
 
+
+
 	<?php if ( is_single() ): ?>
+		<?php the_post_thumbnail( 'banner-image' ); //featured image ?>
 		<p class="post-content" >
 			<?php if ( $post->post_excerpt ): ?>
 				<?php echo get_the_excerpt(); ?>
